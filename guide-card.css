@@ -1,0 +1,61 @@
+.prep-card {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 20px;
+  border-color: #efcdbf;
+  background: linear-gradient(135deg, #fffaf7 0%, #fff 70%);
+}
+
+.prep-card .prep-icon {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  background: #d97757;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.prep-card .prep-eyebrow {
+  color: #b45439;
+  font-size: 12px;
+  font-weight: 850;
+}
+
+.prep-card h2 {
+  margin: 4px 0 7px;
+  color: #493126;
+  font-size: 21px;
+}
+
+.prep-card p {
+  margin: 0;
+  color: #78635a;
+  font-size: 13px;
+  line-height: 1.65;
+}
+
+.prep-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 999px;
+  background: #173f7f;
+  color: #fff;
+  padding: 12px 17px;
+  font-size: 13px;
+  font-weight: 800;
+  white-space: nowrap;
+  transition: transform .2s ease, background .2s ease;
+}
+
+.prep-link:hover { background: #245596; transform: translateY(-1px); }
+.prep-link:focus-visible { outline: 3px solid #8bb8f5; outline-offset: 3px; }
+
+@media (width <= 650px) {
+  .prep-card { grid-template-columns: auto 1fr; gap: 14px; }
+  .prep-link { grid-column: 1 / -1; justify-content: center; }
+}
