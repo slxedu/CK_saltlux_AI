@@ -28,6 +28,15 @@ main { width: min(920px, calc(100% - 32px)); margin: 28px auto 60px; }
 .download-button { position: relative; z-index: 1; display: inline-flex; gap: 9px; align-items: center; margin-top: 28px; padding: 13px 18px; border-radius: 999px; background: #fff; color: #173f7f; font-size: 13px; font-weight: 850; }
 .download-button:hover { background: #f7e7df; }
 
+.sheet-shortcuts { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 18px; }
+.sheet-link { position: relative; display: flex; flex-direction: column; gap: 5px; min-height: 94px; padding: 20px 52px 20px 22px; border-radius: 16px; color: #fff; box-shadow: 0 7px 20px rgba(27,58,104,.10); transition: transform .15s ease, box-shadow .15s ease; }
+.sheet-link:hover { transform: translateY(-2px); box-shadow: 0 12px 24px rgba(27,58,104,.17); }
+.sheet-link.morning { background: linear-gradient(135deg, #173f7f, #2d68b1); }
+.sheet-link.afternoon { background: linear-gradient(135deg, #b85c3d, #dc805f); }
+.sheet-link span { font-size: 12px; font-weight: 850; opacity: .78; }
+.sheet-link b { font-size: 17px; letter-spacing: -.02em; }
+.sheet-link i { position: absolute; right: 22px; top: 50%; transform: translateY(-50%); font-style: normal; font-size: 21px; }
+
 .warning, .tip { display: flex; flex-direction: column; gap: 7px; border-radius: 13px; padding: 17px 19px; font-size: 13px; line-height: 1.7; }
 .warning { margin: 18px 0; border: 1px solid #f1c4b4; background: #fff5f0; color: #754433; }
 .tip { margin: 18px 0; border: 1px solid #bdd8f5; background: #f1f7ff; color: #345d89; }
@@ -63,6 +72,7 @@ footer { padding: 20px; background: var(--navy-dark); color: rgba(255,255,255,.6
   .guide-hero { padding: 38px 24px; border-radius: 20px; }
   .guide-hero h1 { font-size: 31px; }
   .guide-hero p br { display: none; }
+  .sheet-shortcuts { grid-template-columns: 1fr; }
   .step-card { grid-template-columns: 42px 1fr; gap: 12px; padding: 25px 20px; }
   .step-number { width: 40px; height: 40px; border-radius: 12px; font-size: 16px; }
   .step-body h2 { font-size: 21px; }
