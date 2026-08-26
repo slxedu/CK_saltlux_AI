@@ -57,6 +57,9 @@ main { width: min(920px, calc(100% - 32px)); margin: 28px auto 60px; }
 .step-card { display: grid; grid-template-columns: 54px 1fr; gap: 20px; padding: 34px; border: 1px solid var(--line); border-radius: 18px; background: #fff; box-shadow: 0 7px 20px rgba(27,58,104,.05); }
 .step-number { display: grid; place-items: center; width: 48px; height: 48px; border-radius: 15px; background: var(--navy); color: #fff; font-size: 19px; font-weight: 900; }
 .install-card .step-number { font-size: 11px; }
+.exception-card { border: 2px solid #e4c884; background: #fffcf3; }
+.exception-card .step-number { background: #b85c3d; font-size: 12px; }
+.exception-card .step-kicker { color: #a05239; }
 .step-kicker { color: var(--claude); }
 .step-body h2 { margin: 5px 0 12px; color: #213b5d; font-size: 25px; letter-spacing: -.035em; }
 .step-body > p { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.8; }
