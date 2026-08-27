@@ -55,22 +55,17 @@
 .prep-link:hover { background: #245596; transform: translateY(-1px); }
 .prep-link:focus-visible { outline: 3px solid #8bb8f5; outline-offset: 3px; }
 
-.hero-meta .hero-guide-link {
-  display: inline-flex;
-  align-items: center;
-  border: 1px solid #fff;
-  border-radius: 999px;
-  background: #fff;
-  color: #173f7f;
-  padding: 8px 13px;
-  font-size: 12px;
-  font-weight: 850;
-  white-space: nowrap;
-  transition: transform .2s ease, background .2s ease;
+.instructor-card {
+  border-color: #bfd6f4;
+  background: linear-gradient(135deg, #f4f8ff 0%, #fff 72%);
 }
 
-.hero-meta .hero-guide-link:hover { background: #eaf2ff; transform: translateY(-1px); }
-.hero-meta .hero-guide-link:focus-visible { outline: 3px solid #a9c9f5; outline-offset: 3px; }
+.instructor-card .prep-icon { background: #2f78e8; }
+.instructor-card .prep-eyebrow { color: #2f68aa; }
+.instructor-card h2 { color: #183b68; }
+.instructor-card p { color: #5a6e87; }
+.instructor-card .prep-link { background: #173f7f; }
+.instructor-card .prep-link:hover { background: #2f78e8; }
 
 @media (width <= 650px) {
   .prep-card { grid-template-columns: auto 1fr; gap: 14px; }
