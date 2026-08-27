@@ -55,6 +55,23 @@
 .prep-link:hover { background: #245596; transform: translateY(-1px); }
 .prep-link:focus-visible { outline: 3px solid #8bb8f5; outline-offset: 3px; }
 
+.hero-meta .hero-guide-link {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid #fff;
+  border-radius: 999px;
+  background: #fff;
+  color: #173f7f;
+  padding: 8px 13px;
+  font-size: 12px;
+  font-weight: 850;
+  white-space: nowrap;
+  transition: transform .2s ease, background .2s ease;
+}
+
+.hero-meta .hero-guide-link:hover { background: #eaf2ff; transform: translateY(-1px); }
+.hero-meta .hero-guide-link:focus-visible { outline: 3px solid #a9c9f5; outline-offset: 3px; }
+
 @media (width <= 650px) {
   .prep-card { grid-template-columns: auto 1fr; gap: 14px; }
   .prep-link { grid-column: 1 / -1; justify-content: center; }
