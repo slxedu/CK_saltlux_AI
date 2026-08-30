@@ -67,7 +67,25 @@
 .instructor-card .prep-link { background: #173f7f; }
 .instructor-card .prep-link:hover { background: #2f78e8; }
 
+.wifi-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 14px;
+  border: 1px solid #bfd6f4;
+  border-radius: 14px;
+  background: #eaf3ff;
+  color: #173f7f;
+  padding: 13px 18px;
+  box-shadow: 0 6px 16px rgba(27, 58, 104, .06);
+}
+
+.wifi-banner span { font-size: 12px; font-weight: 750; }
+.wifi-banner strong { font-size: 16px; letter-spacing: .04em; }
+
 @media (width <= 650px) {
   .prep-card { grid-template-columns: auto 1fr; gap: 14px; }
   .prep-link { grid-column: 1 / -1; justify-content: center; }
+  .wifi-banner { justify-content: space-between; gap: 8px; padding: 12px 14px; }
 }
