@@ -84,8 +84,30 @@
 .wifi-banner span { font-size: 12px; font-weight: 750; }
 .wifi-banner strong { font-size: 16px; letter-spacing: .04em; }
 
+.materials-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 14px;
+  border: 1px solid #d8c9f3;
+  border-radius: 14px;
+  background: #f7f2ff;
+  color: #623c91;
+  padding: 13px 18px;
+  box-shadow: 0 6px 16px rgba(73, 42, 112, .06);
+  transition: transform .2s ease, background .2s ease;
+}
+
+.materials-banner span { font-size: 12px; font-weight: 750; }
+.materials-banner strong { font-size: 15px; }
+.materials-banner i { font-size: 15px; font-style: normal; font-weight: 900; }
+.materials-banner:hover { background: #efe5ff; transform: translateY(-1px); }
+.materials-banner:focus-visible { outline: 3px solid #c9a8ee; outline-offset: 3px; }
+
 @media (width <= 650px) {
   .prep-card { grid-template-columns: auto 1fr; gap: 14px; }
   .prep-link { grid-column: 1 / -1; justify-content: center; }
   .wifi-banner { justify-content: space-between; gap: 8px; padding: 12px 14px; }
+  .materials-banner { justify-content: space-between; gap: 8px; padding: 12px 14px; }
 }
